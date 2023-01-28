@@ -1,1 +1,3 @@
-select * from jaffle_shop_customers
+{{
+    select(metastore='samples', columns=['*'], table='tpch.customer')
+}}
