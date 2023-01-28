@@ -1,1 +1,1 @@
-select * from tpch.customer
+select * from jaffle_shop_customers
