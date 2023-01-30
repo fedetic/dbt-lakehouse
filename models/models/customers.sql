@@ -1,3 +1,2 @@
-{{
-    select(metastore='samples', columns=['*'], table='tpch.customer')
-}}
+select *
+from dbt_jsun.annual_enterprise_survey_2021
