@@ -1,0 +1,5 @@
+{% macro select(columns, table, schema=None, metastore=None) -%}
+    SELECT {{ columns | join(', ') }}
+    FROM {{ schema }}.{{ table }}
+    {% if metastore %} metastore {{ metastore }}{% endif %}
+{%- endmacro %}
